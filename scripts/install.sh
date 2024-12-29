@@ -47,6 +47,10 @@ echo "Downloading DreamShaper XL Model"
 cd /workspace/stable-diffusion-webui/models/Stable-diffusion
 aria2c -o dreamshaper.safetensors https://civitai.com/api/download/models/351306?type=Model&format=SafeTensor&size=full&fp=fp16
 
+echo "Downloading ArtUniverse Model"
+cd /workspace/stable-diffusion-webui/models/Stable-diffusion
+aria2c -o artuniverse.safetensors https://civitai.com/api/download/models/968318?type=Model&format=SafeTensor&size=full&fp=fp16
+
 echo "Downloading Upscalers"
 mkdir -p /workspace/stable-diffusion-webui/models/ESRGAN
 cd /workspace/stable-diffusion-webui/models/ESRGAN
